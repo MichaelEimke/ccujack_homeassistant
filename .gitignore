@@ -1,3 +1,5 @@
 .idea
 .vscode
 venv
+/hass_discovery_ccu.json
+/.venv/

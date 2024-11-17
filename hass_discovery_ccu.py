@@ -9,12 +9,23 @@ from datetime import datetime
 
 class Ccu2Hass:
    def __init__(self):
+
+      # Read mqtt and ccu-jack configuration parameters from file
       config_file = os.path.realpath(__file__).replace(".py", ".json")
       try:
          config_handle = open(config_file)
          config_dict   = json.load(config_handle)
       except Exception as e:
          print(f"Failed to open config file {config_file} as JSON:\nError: {e}")
+         sys.exit(1)
+
+      # Read device parameters from file
+      parameter_file = os.path.realpath(__file__).replace(".py", ".parameter.json")
+      try:
+         parameter_handle = open(parameter_file)
+         parameter_dict   = json.load(parameter_handle)
+      except Exception as e:
+         print(f"Failed to open parameter file {parameter_file} as JSON:\nError: {e}")
          sys.exit(1)
 
       # General config
@@ -32,7 +43,7 @@ class Ccu2Hass:
       self.url_ccu_jack = config_general.get("url_ccu_jack", "")
 
       # Mandatory for devices: type, entity_type, entity_name
-      config_parameter = config_dict.get("parameter", {})
+      config_parameter = parameter_dict.get("parameter", {})
       self.parameter_all_devices = config_parameter.get("parameter_all_devices", {})
       self.parameter_per_device  = config_parameter.get("parameter_per_device", {})
 

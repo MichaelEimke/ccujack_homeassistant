@@ -1,0 +1,15 @@
+{
+   "config": {
+      "hass_mqtt_host": "",
+      "hass_mqtt_port": "",
+      "hass_mqtt_user": "",
+      "hass_mqtt_pass": "",
+      "hass_mqtt_qos": 1,
+      "hass_mqtt_retain": true,
+      "hass_mqtt_topic_prefix": "homeassistant",
+      "ccu_mqtt_topic_prefix": "ccu-jack/device",
+      "url_ccu_jack": "http://",
+      "use_ccu_device_title": true,
+      "use_ccu_channel_title": false
+   }
+}
