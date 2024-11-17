@@ -31,6 +31,48 @@
                { "type": "MOTION_DETECTION_ACTIVE", "entity_type": "switch",        "entity_name": "motion_detection_active" }
             ]
          },
+         "HmIP-SMI55": {
+            "0": [
+               { "type": "LOW_BAT",            "entity_type": "binary_sensor", "entity_name": "battery",           "category": "diagnostic", "device_class": "battery" },
+               { "type": "OPERATING_VOLTAGE",  "entity_type": "sensor",        "entity_name": "operating_voltage", "category": "diagnostic", "enabled": false, "device_class": "voltage", "unit": "V" },
+               { "type": "UPDATE",             "entity_type": "update",        "entity_name": "update",            "category": "diagnostic" }
+            ],
+            "1": [
+               { "type": "PRESS_SHORT", "entity_type": "binary_sensor", "entity_name": "t1s_press_short" },
+               { "type": "PRESS_LONG",  "entity_type": "binary_sensor", "entity_name": "t1l_press_long" }
+            ],
+            "2": [
+               { "type": "PRESS_SHORT", "entity_type": "binary_sensor", "entity_name": "t2s_press_short" },
+               { "type": "PRESS_LONG",  "entity_type": "binary_sensor", "entity_name": "t2l_press_long" }
+            ],
+            "3": [
+               { "type": "ILLUMINATION",            "entity_type": "sensor", "entity_name": "illumination",         "device_class": "illuminance",   "unit": "lx" },
+               { "type": "MOTION",                  "entity_type": "binary_sensor", "entity_name": "motion", "device_class": "motion" },
+               { "type": "MOTION_DETECTION_ACTIVE", "entity_type": "binary_sensor", "entity_name": "motion_detection_active", "category": "diagnostic", "enabled": false },
+               { "type": "MOTION_DETECTION_ACTIVE", "entity_type": "switch",        "entity_name": "motion_detection_active" }
+            ]
+         },
+         "HmIP-SMI55-2": {
+            "0": [
+               { "type": "LOW_BAT",            "entity_type": "binary_sensor", "entity_name": "battery",           "category": "diagnostic", "device_class": "battery" },
+               { "type": "OPERATING_VOLTAGE",  "entity_type": "sensor",        "entity_name": "operating_voltage", "category": "diagnostic", "enabled": false, "device_class": "voltage", "unit": "V" },
+               { "type": "UPDATE",             "entity_type": "update",        "entity_name": "update",            "category": "diagnostic" }
+            ],
+            "1": [
+               { "type": "PRESS_SHORT", "entity_type": "binary_sensor", "entity_name": "t1s_press_short" },
+               { "type": "PRESS_LONG",  "entity_type": "binary_sensor", "entity_name": "t1l_press_long" }
+            ],
+            "2": [
+               { "type": "PRESS_SHORT", "entity_type": "binary_sensor", "entity_name": "t2s_press_short" },
+               { "type": "PRESS_LONG",  "entity_type": "binary_sensor", "entity_name": "t2l_press_long" }
+            ],
+            "3": [
+               { "type": "ILLUMINATION",            "entity_type": "sensor", "entity_name": "illumination",         "device_class": "illuminance",   "unit": "lx" },
+               { "type": "MOTION",                  "entity_type": "binary_sensor", "entity_name": "motion", "device_class": "motion" },
+               { "type": "MOTION_DETECTION_ACTIVE", "entity_type": "binary_sensor", "entity_name": "motion_detection_active", "category": "diagnostic", "enabled": false },
+               { "type": "MOTION_DETECTION_ACTIVE", "entity_type": "switch",        "entity_name": "motion_detection_active" }
+            ]
+         },
          "HMIP-PSM": {
             "0": [
                { "type": "ACTUAL_TEMPERATURE", "entity_type": "sensor", "entity_name": "temperature", "device_class": "temperature", "unit": "°C", "enabled": false },
