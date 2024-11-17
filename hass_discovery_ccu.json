@@ -13,11 +13,11 @@
       "use_ccu_channel_title": false
    },
    "parameter": {
-      "paramater_all_devices": {
+      "parameter_all_devices": {
          "0": [
             { "type": "CONFIG_PENDING", "entity_type": "binary_sensor", "entity_name": "config_pending", "category": "diagnostic", "enabled": false },
             { "type": "UPDATE_PENDING", "entity_type": "binary_sensor", "entity_name": "update_pending", "category": "diagnostic", "enabled": false },
-            { "type": "DUTY_CYCLE",     "entity_type": "binary_sensor", "entity_name": "duty_cicle",     "category": "diagnostic", "enabled": false },
+            { "type": "DUTY_CYCLE",     "entity_type": "binary_sensor", "entity_name": "duty_cycle",     "category": "diagnostic", "enabled": false },
             { "type": "RSSI_DEVICE",    "entity_type": "sensor",        "entity_name": "rssi_device",    "category": "diagnostic", "enabled": false, "state_class": "total" },
             { "type": "RSSI_PEER",      "entity_type": "sensor",        "entity_name": "rssi_peer",      "category": "diagnostic", "enabled": false, "state_class": "total" }
          ]
@@ -25,7 +25,7 @@
       "parameter_per_device": {
          "HmIP-RFUSB": {
             "0": [
-               { "type": "DUTY_CYCLE_LEVEL",    "entity_type": "sensor", "entity_name": "duty_cicle_level",    "category": "diagnostic", "availability_check": false, "unit": "%" },
+               { "type": "DUTY_CYCLE_LEVEL",    "entity_type": "sensor", "entity_name": "duty_cycle_level",    "category": "diagnostic", "availability_check": false, "unit": "%" },
                { "type": "CARRIER_SENSE_LEVEL", "entity_type": "sensor", "entity_name": "carrier_sense_level", "category": "diagnostic", "availability_check": false, "unit": "%" },
                { "type": "UPDATE",              "entity_type": "update", "entity_name": "update",              "category": "diagnostic", "availability_check": false }
             ]

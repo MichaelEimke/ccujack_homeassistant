@@ -33,7 +33,7 @@ class Ccu2Hass:
 
       # Mandatory for devices: type, entity_type, entity_name
       config_parameter = config_dict.get("parameter", {})
-      self.paramater_all_devices = config_parameter.get("paramater_all_devices", {})
+      self.parameter_all_devices = config_parameter.get("parameter_all_devices", {})
       self.parameter_per_device  = config_parameter.get("parameter_per_device", {})
 
    def SendDiscovery(self):
@@ -83,8 +83,8 @@ class Ccu2Hass:
             }
 
             if device_type != 'HmIP-RFUSB':
-               for channel in self.paramater_all_devices:
-                  for channel_template in self.paramater_all_devices[channel]:
+               for channel in self.parameter_all_devices:
+                  for channel_template in self.parameter_all_devices[channel]:
                      self._progress_channel_template(
                         channel_template = channel_template,
                         channel = channel,
